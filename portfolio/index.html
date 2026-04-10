@@ -1,1 +1,107 @@
-<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My Portfolio</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #121212;\n            color: #ffffff;\n            margin: 0;\n            padding: 0;\n        }\n        nav {\n            background-color: #1f1f1f;\n            padding: 10px;\n        }\n        nav ul {\n            list-style-type: none;\n            margin: 0;\n            padding: 0;\n        }\n        nav ul li {\n            display: inline;\n            margin-right: 20px;\n        }\n        nav ul li a {\n            color: #ffffff;\n            text-decoration: none;\n        }\n        .hero {\n            background-color: #282828;\n            padding: 50px;\n            text-align: center;\n        }\n        .skills, .timeline, .certifications, .education, .contact {\n            padding: 20px;\n            border: 1px solid #444;\n            margin: 20px 0;\n        }\n        .grid {\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: space-between;\n        }\n        .grid-item {\n            background-color: #1f1f1f;\n            margin: 10px;\n            padding: 15px;\n            flex: 1;\n        }\n    </style>\n</head>\n<body>\n    <nav>\n        <ul>\n            <li><a href=\"#hero\">Home</a></li>\n            <li><a href=\"#skills\">Skills</a></li>\n            <li><a href=\"#timeline\">Timeline</a></li>\n            <li><a href=\"#certifications\">Certifications</a></li>\n            <li><a href=\"#education\">Education</a></li>\n            <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n    </nav>\n    <div class=\"hero\" id=\"hero\">\n        <h1>Welcome to My Portfolio</h1>\n        <p>Explore my work and skills</p>\n    </div>\n    <div class=\"skills\" id=\"skills\">\n        <h2>Skills</h2>\n        <div class=\"grid\">\n            <div class=\"grid-item\">HTML</div>\n            <div class=\"grid-item\">CSS</div>\n            <div class=\"grid-item\">JavaScript</div>\n            <div class=\"grid-item\">React</div>\n        </div>\n    </div>\n    <div class=\"timeline\" id=\"timeline\">\n        <h2>Timeline</h2>\n        <p>Details about my job experiences...</p>\n    </div>\n    <div class=\"certifications\" id=\"certifications\">\n        <h2>Certifications</h2>\n        <p>Details about my certifications...</p>\n    </div>\n    <div class=\"education\" id=\"education\">\n        <h2>Education</h2>\n        <p>Details about my education...</p>\n    </div>\n    <div class=\"contact\" id=\"contact\">\n        <h2>Contact</h2>\n        <p>Details for contacting me...</p>\n    </div>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Allara | Professional Portfolio</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #282828;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero-background.jpg') no-repeat center center; 
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .timeline {
+            padding: 20px;
+            list-style-type: none;
+        }
+        .timeline li {
+            margin-bottom: 10px;
+        }
+        .certifications, .education {
+            padding: 20px;
+        }
+        footer {
+            background: #282828;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marc Allara</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to My Professional Portfolio</h2>
+    </section>
+    <section id="skills" class="skills">
+        <h3>Skills</h3>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>React</div>
+        <div>Node.js</div>
+    </section>
+    <section id="experience">
+        <h3>Professional Timeline</h3>
+        <ul class="timeline">
+            <li>2021 - Present: Software Developer at Tech Company</li>
+            <li>2019 - 2021: Junior Developer at Startup</li>
+            <li>2018: Internship at Local Business</li>
+        </ul>
+    </section>
+    <section id="certifications">
+        <h3>Certifications</h3>
+        <ul class="certifications">
+            <li>Certified JavaScript Developer</li>
+            <li>React Professional Certification</li>
+        </ul>
+    </section>
+    <section id="education">
+        <h3>Education</h3>
+        <ul class="education">
+            <li>Bachelor of Science in Computer Science, University XYZ</li>
+        </ul>
+    </section>
+    <footer>
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:marcallara@example.com">marcallara@example.com</a></p>
+        <p>LinkedIn: <a href="#">/in/marcallara</a></p>
+    </footer>
+</body>
+</html>
